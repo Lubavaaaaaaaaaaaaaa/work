@@ -3,7 +3,7 @@
 package HQ_NET {
 
     object HQ_R {
-        eth0: 'D 192.168.2.101 --> S 192.168.2.51'
+        eth0: 'S 192.168.2.51'
         eth1: ''
     }
     object HQ_SRV {
@@ -13,11 +13,11 @@ package HQ_NET {
 }
 package BR_NET {
     object BR_R {
-        eth0: 'D 192.168.3.100 --> S 192.168.3.51'
-        eth1: ''
+        eth0: 'S 192.168.3.51/24'
+        eth1: '192.168.4.1/26'
     }
     object BR_SRV {
-        eth0: ''
+        eth0: '192.168.4.2/26'
     }
 }
 
