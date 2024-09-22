@@ -8,6 +8,7 @@ package HQ_NET {
     }
     object HQ_SRV {
         eth0: ''
+        eth1: 'D 192.168.2.102'
     }
 
 }
@@ -41,6 +42,7 @@ br_ISP_2 -- ISP
 
 br_ISP_1 -- BR_R
 br_ISP_2 -- HQ_R
+br_ISP_2 .. HQ_SRV
 
 admin_client --> ISP : OVPN 192.168.59/0
 
